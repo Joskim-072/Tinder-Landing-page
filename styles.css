@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 90px;
+}
+
+/*HERO*/
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.cta {
+    text-align: left;
+}
+
+.download-button-one {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: linear-gradient(#fd297c,#e4644e);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.download-button:hover {
+    background: linear-gradient(#e4644e,#fd297c);
+    transform: scale(1.01,1.01);
+}
+
+/*FEATURES*/
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+}
+.matching-icon-image img{
+    width: 105px;
+}
+
+/*TESTIMONIALS*/
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+.testimonial {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testimonial .fa-solid{
+    color: #fd297c;
+}
+
+
+/*download-app*/
+.download-app {
+    text-align: center;
+    padding: 40px;
+    /*background: linear-gradient(#fa6ba2,#ee8c7b);*/
+    /*color: white;*/
+}
+
+.download-app .download-button {
+    background-color: white;
+    color: #4CAF50;
+}
+.download-button-two {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: linear-gradient(#fd297c,#e4644e);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.download-button-two:hover {
+    background: linear-gradient(#e4644e,#fd297c);
+    transform: scale(1.01,1.01);
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#fd297c,#e4644e);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 20vh;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-links{
+    transform: translateX(130px);
+}
+.social-links a {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+/* MEDIA QUERIES*/
+@media screen and (max-width:800px){
+    .hero {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .hero img{
+        margin-right: 3%;
+    }
+    .download-button-one {
+        position: absolute;
+        top: 82%;
+        left: 32%;
+    }
+    .features{
+        flex-wrap: wrap;
+    }
+
+}
